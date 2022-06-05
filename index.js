@@ -46,7 +46,7 @@ async function start() {
 
 async function readTodos() {
     try {
-        const results = await pool.query("select * from table1")
+        const results = await pool.query("select * from test")
         return results.rows
     } catch (e) {
         return []
@@ -55,7 +55,7 @@ async function readTodos() {
 
 
 // client.connect()
-//     .then(() => client.query("select * from table1"))
+//     .then(() => client.query("select * from test"))
 //     .then(results => console.table(results.rows))
 //     .then(() => console.log("connected successfully"))
 //     .catch(e => console.log(e))
